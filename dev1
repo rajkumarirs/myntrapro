@@ -444,6 +444,27 @@
 
     <profiles>
         <profile>
+-->
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <groupId>org.apache.seata</groupId>
+        <artifactId>seata-parent</artifactId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>seata-server</artifactId>
+    <packaging>jar</packaging>
+    <name>seata-server ${project.version}</name>
+    <description>server for Seata built with Maven</description>
+
+    <properties>
+        <spring-boot-for-server.version>2.7.18</spring-boot-for-server.version>
+        <spring-framework-for-server.version>5.3.39</spring-framework-for-server.version>
+        <snakeyaml-for-server.version>2.0</snakeyaml-for-server.version>
+    </properties>
+
             <id>release-seata</id>
             <properties>
                 <mysql.jdbc.version>5.1.42</mysql.jdbc.version>
